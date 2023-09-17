@@ -10,7 +10,7 @@ module.exports = {
         node: true,
       },
       files: [
-        '.eslintrc.{js,css}',
+        '.eslintrc.{js,jsx,css}',
       ],
       parserOptions: {
         sourceType: 'script',
@@ -22,5 +22,8 @@ module.exports = {
     sourceType: 'module',
   },
   rules: {
+    'max-len': 'off',
+    'linebreak-style': 'off',
+    'import/no-extraneous-dependencies': 'off',
   },
 };

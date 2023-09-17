@@ -1,0 +1,14 @@
+.social-button-container {
+  height: 24px;
+  width: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px 5px;
+  background-color: #FFB400;
+  border-radius: 50%;
+}
+
+.icon {
+  height: 14px;
+  width: 14px;
+}

@@ -52,11 +52,43 @@ html, body {
 }
 
 .divider {
-  margin-top: 10px;
-  width: 180px;
+  margin: 10px 0px;
+  width: 95%;
   height: 1.5px;
   border-radius: '50%';
+  border-color: #F0F0F6;
   background-color: #F0F0F6;
+}
+
+.social-container {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.extra-info {
+  color: var(--black, #2B2B2B);
+  font-family: Inter;
+  width: 100%;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 20px;
+  text-align: left;
+}
+
+.extra-info-row {
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  margin: 10px 0px;
+}
+
+.highlight-block {
+  font-weight: 600;
+  background-color: #FFB400;
+  margin-right: 2px;
 }
 
 .content-container {
@@ -108,16 +140,40 @@ html, body {
 
 /* Add responsive styles for smaller screens */
 @media (max-width: 768px) {
+  html, body {
+    margin: 0;
+    padding: 0;
+    max-width: 100;
+  }
+
+  .header{
+    padding: 25px 0px;
+  }
+
   .container {
     flex-direction: column;
     align-items: center;
     justify-content: center;
   }
 
+  .divider {
+    width: 80%;
+  }
+
+  .extra-info {
+    padding-left: 45px;
+  }
+
   .rectangle {
     flex-direction: column;
     align-items: center;
-    /* text-align: center; */
+    background-size: 640px 300px;
+    margin-left: 0px;
+    margin-right: 0px;
+  } 
+
+  .experience {
+    width: 90%;
   }
 
   .profile-bg {
